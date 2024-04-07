@@ -1,0 +1,100 @@
+.mainPage{
+    display: flex;
+    flex-direction: row;
+
+}
+.socialimg{
+    background-image: url("../asset/registerimgs/socialimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 100vh;
+}
+
+.contentSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: "Italianno", cursive;
+    font-weight: 550;
+    margin-top: -37px;
+    font-style: normal;
+
+}
+.topic{
+    font-size: 60px;
+
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    width: 400px;
+
+    border: 2px solid;
+    border-radius: 5px;
+    height: 30px;
+}
+.already{
+    display: flex;
+    flex-direction: row;
+    gap: 195px;
+    margin-left: 12px;
+}
+
+.inputPage{
+    margin-left: 50px;
+    width: 500px;
+    height: 78vh;
+}
+
+.remember{
+    display: flex;
+    flex-direction: row;
+}
+.text{
+    font-size: 35px;
+    text-align: center;
+    font-family: "Italianno", cursive;
+    font-weight: 580;
+    font-style: normal;
+    margin-left: 100px;
+    width: 100%;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+    margin-left: 50px;
+    font-size: 18px;
+
+
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 18px;
+
+}
+
+.btn{
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+}
+.last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 17px;
+
+}

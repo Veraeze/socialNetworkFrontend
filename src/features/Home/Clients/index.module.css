@@ -1,0 +1,20 @@
+.mainCont{
+    padding: 0 144px 0 144px;
+    gap: 16px;
+    width: 1440px;
+}
+ .mainCont>p{
+    margin-left: 500px;
+
+
+}
+.mainCont >h1{
+    margin-left: 580px;
+}
+.clientIcon{
+    width: 1352px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}

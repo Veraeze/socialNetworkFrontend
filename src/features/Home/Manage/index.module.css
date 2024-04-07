@@ -1,0 +1,28 @@
+.suits{
+    display: flex;
+    flex-Direction: row;
+    gap: 30px;
+    padding: 0 144px 0 144px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+ .mainCont>h1{
+    color: #4D4D4D;
+    margin-left: 650px;
+}
+.mainCont > h1 > span{
+    margin-left: 70px;
+}
+.mainCont > p {
+    color: #4D4D4D;
+    margin-left: 750px;
+
+}
+
+.mainCont{
+    align-items: center;
+    margin-top: 30px;
+
+}

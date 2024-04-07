@@ -1,0 +1,22 @@
+.words{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.words>h1{
+    font-size: 36px;
+}
+.words>p{
+    font-size: 16px;
+}
+.markets{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 64px 0 64px;
+    align-items: center;
+    justify-content: center;
+
+}
+.mainCont{
+    margin-top: 60px;
+}

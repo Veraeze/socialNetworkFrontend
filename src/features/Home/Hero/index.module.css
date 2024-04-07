@@ -1,0 +1,25 @@
+.mainCont{
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    padding: 96px 144px 96px 144px;
+    background-color: whitesmoke;
+}
+.leftCont > p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.leftCont{
+    gap: 32px;
+    width: 657px;
+    height: 276px;
+}
+.leftCont > h1{
+    font-size: 64px;
+}
+.rightCont{
+    width: 391px;
+    height: 407px;
+    margin-right: 20px;
+}

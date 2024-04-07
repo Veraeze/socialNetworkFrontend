@@ -1,0 +1,21 @@
+.mainCont{
+    display: flex;
+    flex-direction: row;
+    padding: 64px 144px 64px 144px;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+.rightCont{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 150px;
+    gap: 30px;
+}
+.leftCont > h1{
+    font-size: 36px;
+}
+
+.leftCont > p{
+    font-size: 16px;
+}

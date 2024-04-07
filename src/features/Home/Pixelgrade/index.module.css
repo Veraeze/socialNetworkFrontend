@@ -1,0 +1,19 @@
+.mainCont{
+    justify-content: space-between;
+    padding: 0 144px 0 144px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    gap: 50px;
+}
+
+.rightCont{
+    margin-top: 45px;
+}
+
+.rightCont>h1{
+    font-size: 36px;
+}
+.rightCont>p{
+    font-size: 16px;
+}
