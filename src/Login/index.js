@@ -1,5 +1,5 @@
  import style from "./index.module.css"
- import {Link} from "react-router-dom";
+ import {Link, useNavigate} from "react-router-dom";
  import React, {useState} from "react";
  import {Field, Form, Formik} from "formik";
  import {Icon} from "@iconify/react";
@@ -9,6 +9,14 @@
  import {toast, ToastContainer} from "react-toastify";
 const Login = ()=> {
     const [isLoading, setIsLoading] = useState(false);
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
+    const [pErrorMessage, setPErrorMessage] = useState("");
+    const  [showPassword, setShowPassword] = useState(false);
+
+    const navigate = useNavigate();
+
 
     const validationSchema = Yup.object().shape({
         username: Yup.string()
@@ -19,7 +27,7 @@ const Login = ()=> {
             .required('password is required')
     });
 
-    const handleSubscribe = async (values, { resetForm }) => {
+    const handleLogin = async (values, { resetForm }) => {
         try {
             setIsLoading(true);
             const payload = {
@@ -77,7 +85,7 @@ const Login = ()=> {
                 password: '',
             }}
             validationSchema={validationSchema}
-            onSubmit={handleSubscribe}
+            onSubmit={handleLogin}
         >
             {({ values, errors , touched, handleChange, handleBlur }) => (
                 <Form>
