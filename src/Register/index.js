@@ -14,7 +14,7 @@ const Register = () => {
 
     const validationSchema = Yup.object().shape({
         username: Yup.string()
-            .matches(/^[a-zA-Z\s]+$/, 'Name should only contain letters and spaces')
+            .matches(/^[a-zA-Z0-9]+$/, 'Name should only contain letters and numbers')
             .required('username is required'),
         email: Yup.string()
             .email('Invalid email address')

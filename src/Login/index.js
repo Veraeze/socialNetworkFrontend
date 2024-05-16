@@ -11,8 +11,6 @@ const Login = ()=> {
     const [isLoading, setIsLoading] = useState(false);
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [errorMessage, setErrorMessage] = useState("");
-    const [pErrorMessage, setPErrorMessage] = useState("");
     const  [showPassword, setShowPassword] = useState(false);
 
     const navigate = useNavigate();
@@ -28,6 +26,7 @@ const Login = ()=> {
     });
 
     const handleLogin = async (values, { resetForm }) => {
+        values.preventDefault()
         try {
             setIsLoading(true);
             const payload = {
@@ -36,6 +35,7 @@ const Login = ()=> {
             };
             const url = "http://localhost:6767/api/v1/user/login"
             const response = await axios.post(url, payload);
+            const data = await response.json();
 
             if (response) {
                 toast.success(`Hi ${values.username}, You have been registered successfully`, {
@@ -50,6 +50,9 @@ const Login = ()=> {
                 setIsLoading(false);
                 console.log(response);
                 resetForm();
+                if (username !== "" && password !== "") {
+                    navigate(`/hero/${data.id}`);
+                }
             } else {
                 toast.error('Registration failed. Please try again', {
                     position: "top-right",

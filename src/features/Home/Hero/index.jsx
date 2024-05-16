@@ -1,7 +1,6 @@
 import style from "./index.module.css"
 import FilledButton from "../../../components/reusables/FilledButton";
 import heroImg from "../../../assets/home/Illustration.png"
-import {useState} from "react";
 
 const Hero = () => {
     return(

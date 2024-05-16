@@ -1,0 +1,52 @@
+.blackSection{
+    display: flex;
+    flex-direction: row;
+    gap: 125px;
+    background-color: #263238;
+    padding: 64px 165px 64px 165px;
+    color: #FFFFFF;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    padding: 32px 0 32px 0;
+}
+
+.secondSection{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    width: 635px;
+    height: 200px;
+}
+.secondSection>div>h4{
+    font-size: 20px;
+}
+.secondSection>div>p{
+    font-size: 14px;
+}
+.firstSection{
+    gap: 40px;
+    width: 350px;
+    height: 190px;
+
+ }
+.firstSection > p{
+    margin-top: 25px;
+}
+
+.socialIcon{
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.firstSection > p{
+    gap: 8px;
+}
+.mainCont{
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+    margin-top: 220px;
+}
